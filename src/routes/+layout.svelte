@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type TopAppBarComponentDev from '@smui/top-app-bar';
 	import TopAppBar, { Row, Section, Title, AutoAdjust } from '@smui/top-app-bar';
-	import IconButton from '@smui/icon-button';
+	import IconButton, { Icon } from '@smui/icon-button';
 	import { AppContent } from '@smui/drawer';
 	import { currentPath, isLandscape, isLoading } from '$lib/model/store';
 	import { onMount } from 'svelte';
@@ -10,6 +10,7 @@
 	import Splash from '$lib/components/splash.svelte';
 	import { isLandscapeDetect, PathId, runTransition } from '$lib/model/constants';
 	import type { PageData } from './$types';
+	import Button, { Label } from '@smui/button';
 
 	export let data: PageData;
 
@@ -41,6 +42,12 @@
 						person_pin</IconButton
 					>
 					<Title><strong>みんなで作るポートフォリオ</strong></Title>
+				</Section>
+				<Section align="end" toolbar>
+					<Button on:click={() => null}>
+						<Icon class="material-icons-outlined">info</Icon>
+						<Label>作り方</Label>
+					</Button>
 				</Section>
 			</Row>
 
