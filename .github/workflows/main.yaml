@@ -3,9 +3,8 @@ name: vercel
 on:
     push:
         branches:
-            - master
-        paths:
-            - "site/**"
+            - main
+
     pull_request:
         types: [opened, synchronize, reopened]
         paths:
