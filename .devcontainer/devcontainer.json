@@ -1,9 +1,6 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js & TypeScript",
-	"image": "mcr.microsoft.com/vscode/devcontainers/universal:linux",
-
 	"customizations": {
 		"vscode": {
 			"extensions": [
